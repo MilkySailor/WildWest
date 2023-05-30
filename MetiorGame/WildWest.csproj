@@ -46,37 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="blyat.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="blyat.Designer.cs">
-      <DependentUpon>blyat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CommieDifficulty.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CommieDifficulty.Designer.cs">
-      <DependentUpon>CommieDifficulty.cs</DependentUpon>
-    </Compile>
     <Compile Include="difficulty.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="difficulty.Designer.cs">
       <DependentUpon>difficulty.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Earth.cs" />
-    <Compile Include="EarthBase.cs" />
-    <Compile Include="fail.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="fail.Designer.cs">
-      <DependentUpon>fail.cs</DependentUpon>
-    </Compile>
-    <Compile Include="failedstalin.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="failedstalin.Designer.cs">
-      <DependentUpon>failedstalin.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -90,23 +64,11 @@
     <Compile Include="GameScreen.Designer.cs">
       <DependentUpon>GameScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="GreatVictory.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GreatVictory.Designer.cs">
-      <DependentUpon>GreatVictory.cs</DependentUpon>
-    </Compile>
     <Compile Include="Menu.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ohteroptions.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ohteroptions.Designer.cs">
-      <DependentUpon>ohteroptions.cs</DependentUpon>
     </Compile>
     <Compile Include="Options.cs">
       <SubType>UserControl</SubType>
@@ -114,7 +76,6 @@
     <Compile Include="Options.Designer.cs">
       <DependentUpon>Options.cs</DependentUpon>
     </Compile>
-    <Compile Include="Planet.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -124,20 +85,9 @@
     <Compile Include="Win.Designer.cs">
       <DependentUpon>Win.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="blyat.resx">
-      <DependentUpon>blyat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CommieDifficulty.resx">
-      <DependentUpon>CommieDifficulty.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Words.cs" />
     <EmbeddedResource Include="difficulty.resx">
       <DependentUpon>difficulty.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fail.resx">
-      <DependentUpon>fail.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="failedstalin.resx">
-      <DependentUpon>failedstalin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -145,14 +95,8 @@
     <EmbeddedResource Include="GameScreen.resx">
       <DependentUpon>GameScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GreatVictory.resx">
-      <DependentUpon>GreatVictory.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ohteroptions.resx">
-      <DependentUpon>ohteroptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Options.resx">
       <DependentUpon>Options.cs</DependentUpon>
@@ -188,6 +132,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\National Anthem Of The USSR.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CowBoy Dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CowBoyShoot%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attack1 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CowBoyArmChop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CowBoySmokingIdle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Death %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle %283%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -25,7 +25,7 @@ namespace MetiorGame
 
         private void solvietButton_Click(object sender, EventArgs e)
         {
-            Form1.ChangeScreen(this, new ohteroptions());
+         
         }
     }
 }

@@ -63,9 +63,59 @@ namespace MetiorGame.Properties {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string explosion {
+        internal static string __ {
             get {
-                return ResourceManager.GetString("explosion", resourceCulture);
+                return ResourceManager.GetString("\\\\", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Attack1__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Attack1__3_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CowBoyArmChop {
+            get {
+                object obj = ResourceManager.GetObject("CowBoyArmChop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CowBoyShoot_1_ {
+            get {
+                object obj = ResourceManager.GetObject("CowBoyShoot_1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CowBoySmokingIdle {
+            get {
+                object obj = ResourceManager.GetObject("CowBoySmokingIdle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Death__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Death__2_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -75,6 +125,25 @@ namespace MetiorGame.Properties {
         internal static System.IO.UnmanagedMemoryStream Explosion_Sound_Effect__FREE_DOWNLOAD___1_ {
             get {
                 return ResourceManager.GetStream("Explosion_Sound_Effect__FREE_DOWNLOAD___1_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Idle__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Idle__3_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string j_ {
+            get {
+                return ResourceManager.GetString("j\\", resourceCulture);
             }
         }
         
