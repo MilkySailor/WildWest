@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,11 +55,22 @@
     <Compile Include="difficulty.Designer.cs">
       <DependentUpon>difficulty.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tutorial.Designer.cs">
+      <DependentUpon>Tutorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WildWest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="WildWest.Designer.cs">
+      <DependentUpon>WildWest.cs</DependentUpon>
     </Compile>
     <Compile Include="GameScreen.cs">
       <SubType>UserControl</SubType>
@@ -70,11 +84,11 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Options.cs">
+    <Compile Include="DiffSelectScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Options.Designer.cs">
-      <DependentUpon>Options.cs</DependentUpon>
+    <Compile Include="DiffSelectScreen.Designer.cs">
+      <DependentUpon>DiffSelectScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
@@ -89,8 +103,11 @@
     <EmbeddedResource Include="difficulty.resx">
       <DependentUpon>difficulty.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Tutorial.resx">
+      <DependentUpon>Tutorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WildWest.resx">
+      <DependentUpon>WildWest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameScreen.resx">
       <DependentUpon>GameScreen.cs</DependentUpon>
@@ -98,22 +115,18 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Options.resx">
-      <DependentUpon>Options.cs</DependentUpon>
+    <EmbeddedResource Include="DiffSelectScreen.resx">
+      <DependentUpon>DiffSelectScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Win.resx">
       <DependentUpon>Win.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -153,6 +166,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Idle %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9mm-pistol-shot-6349.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neil LeVang - Ghost Riders In The Sky %281961%29 4K.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoodBadUglyTheme.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameStart.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PassiveIdleReaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HostileAttackReaper-Sheet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeathReaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingAttack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingDeath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingIdle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gobAttack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gobDeath.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gobIdle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B_witch_attack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B_witch_death %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B_witch_idle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attack1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Death.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HostileAttackReaper-Sheet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Idle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idleReaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adventurerAttack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adventurerDeath.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adventurerIdle.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
