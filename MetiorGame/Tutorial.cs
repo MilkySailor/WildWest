@@ -197,7 +197,6 @@ namespace MetiorGame
         {
             typingBox.Visible = true;
             label3.Visible = true;
-            streakLabel.Visible = true;
             readyLabel.Visible = true;
             threeSecondTimerLabel.Visible = true;
             label6.Visible = true;
